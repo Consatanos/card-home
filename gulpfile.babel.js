@@ -18,10 +18,10 @@ import del from 'del';
 import browsersync from 'browser-sync';
 
 /**
- * clean dist directory
+ * clean docs directory
  */
 const clean = () => {
-    return del(["./dist/*"]);
+    return del(["./docs/*"]);
 };
 
 /**
@@ -29,12 +29,12 @@ const clean = () => {
  */
 const serve = () => {
     browsersync.init({
-        server: "./dist/",
+        server: "./docs/",
         port: 4000,
         notify: true
     });
     watch([
-        './src/html/index.html'
+        './src/html/*.html'
     ], parallel(html));
     watch([
         './src/js/*.js',
@@ -57,8 +57,8 @@ const serve = () => {
  * html task
  */
 const html = () => {
-    return src('./src/html/index.html')
-        .pipe(dest('./dist/'));
+    return src('./src/html/*.html')
+        .pipe(dest('./docs/'));
 };
 
 /**
@@ -67,7 +67,7 @@ const html = () => {
 const js = () => {
     return src('./src/js/*.js')
         .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(dest('./dist/'));
+        .pipe(dest('./docs/'));
 };
 
 /**
@@ -81,7 +81,7 @@ const scss = () => {
             grid: 'autoplace'
         }))
         .pipe(mincss())
-        .pipe(dest('./dist/'));
+        .pipe(dest('./docs/'));
 };
 
 /**
@@ -90,7 +90,7 @@ const scss = () => {
 const images = () => {
     return src('./src/image/*.{jpg,png}')
         .pipe(image())
-        .pipe(dest('./dist/image/'));
+        .pipe(dest('./docs/image/'));
 };
 
 /**
@@ -108,7 +108,7 @@ const sprite = () => {
                 }
             }
         }))
-        .pipe(dest('./dist/image'));
+        .pipe(dest('./docs/image'));
 };
 
 const development = series(

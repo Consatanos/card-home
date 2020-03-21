@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="section">
+    <div class="wrapper">
+      <!-- .demo -->
+      <div class="demo">
+        <div class="demo__title">Выравнивание элементов при помощи :after<br>
+          Ограниченно рабочий - только если элементов в строке не больше 3</div>
+        <div class="demo__subtitle">7 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_after">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+          <div class="demo__item">7</div>
+        </div>
+        <div class="demo__subtitle">6 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_after">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+        </div>
+      </div>
+      <!-- #demo -->
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrapper">
+      <!-- .demo -->
+      <div class="demo">
+        <div class="demo__title">Выравнивание элементов при помощи вычисления margin-right: auto у последнего
+          элемента<br>
+          Не рабочий, не понятно откуда брать размер margin, что-бы он не прижимал соседей слева</div>
+        <div class="demo__subtitle">7 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_margin">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+          <div class="demo__item">7</div>
+        </div>
+        <div class="demo__subtitle">6 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_margin">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+        </div>
+      </div>
+      <!-- #demo -->
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrapper">
+      <!-- .demo -->
+      <div class="demo">
+        <div class="demo__title">Выравнивание элементов при помощи вычисления margin через calc<br>
+          Необходимо вручную задавать колличества элементов в строке</div>
+        <div class="demo__subtitle">7 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_start">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+          <div class="demo__item">7</div>
+        </div>
+        <div class="demo__subtitle">6 элементов в стоке из 4</div>
+        <div class="demo__list demo__list_start">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+        </div>
+      </div>
+      <!-- #demo -->
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrapper">
+      <!-- .demo -->
+      <div class="demo">
+        <div class="demo__title">Выравнивание элементов при помощи вычисления margin через calc<br>
+          Необходимо вручную задавать колличества элементов в строке</div>
+        <div class="demo__subtitle">7 элементов в стоке из 4</div>
+        <div class="demo__grid">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+          <div class="demo__item">7</div>
+        </div>
+        <div class="demo__subtitle">6 элементов в стоке из 4</div>
+        <div class="demo__grid">
+          <div class="demo__item">1</div>
+          <div class="demo__item">2</div>
+          <div class="demo__item">3</div>
+          <div class="demo__item">4</div>
+          <div class="demo__item">5</div>
+          <div class="demo__item">6</div>
+        </div>
+      </div>
+      <!-- #demo -->
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
