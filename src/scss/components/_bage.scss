@@ -1,0 +1,34 @@
+//----- .bage -----//
+.bage {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: $color__pale;
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__rating {
+    flex-shrink: 0;
+    margin-left: 5px;
+    background-color: $color__main;
+    color: #FFFFFF;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 1px 5px;
+    line-height: 1.3;
+  }
+
+  &_alert {
+    .bage__rating {
+      background-color: $color__alert--bg;
+    }
+  }
+
+  .card-main__header & {
+    vertical-align: top;
+  }
+}
+
+//----- #bage -----//
