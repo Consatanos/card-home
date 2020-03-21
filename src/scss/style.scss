@@ -3,10 +3,14 @@
 //----- #import -----//
 
 //----- .components -----//
-
+@import './components/btn';
+@import './components/bage';
 //----- #components -----//
 
 //----- .blocks -----//
+@import './blocks/section';
 @import './blocks/card';
 @import './blocks/card-aside';
+@import './blocks/card-main';
+@import './blocks/card-params';
 //----- #blocks -----//

@@ -1,11 +1,33 @@
 //----- .import -----//
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic');
 @import '../libs/normalize/normalize';
 @import './variables';
 //----- #import -----//
 
 //----- .common -----//
 * {
-  color: red;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font__family--main;
+  font-size: 14px;
+  color: $color__text;
+}
+
+a {
+  color: $color__link;
+}
+
+small {
+  font-size: 12px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
 }
 
 //----- #common -----//
