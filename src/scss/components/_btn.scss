@@ -1,0 +1,66 @@
+//----- .btn -----//
+.btn {
+  background-color: $color__main;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 8px 16px;
+  padding-left: 12px;
+  border-radius: 16px;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-right: 7px;
+  }
+
+  &__group {
+    margin-bottom: -10px;
+
+    .btn {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+
+  &__text {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &_big {
+    padding: 13px 20px;
+    padding-left: 16px;
+    border-radius: 22px;
+
+    .btn__text {
+      font-size: 14px;
+    }
+  }
+
+  &_success {
+    background-color: $color__success--bg;
+
+    .btn__text {
+      color: $color__success--text;
+    }
+  }
+
+  &_error {
+    background-color: $color__error--bg;
+
+    .btn__text {
+      color: $color__error--text;
+    }
+  }
+}
+
+//----- #btn -----//
