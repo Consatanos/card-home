@@ -1,0 +1,39 @@
+//----- .card -----//
+.card {
+  width: 100%;
+  background-color: $color__bg;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  padding: 24px 24px;
+
+  &__main {
+    flex-grow: 1;
+    padding-right: 30px;
+  }
+
+  &__aside {
+    width: 340px;
+    padding-left: 30px;
+    flex-shrink: 0;
+    border-left: 1px solid fade-out(#000000, 0.92);
+  }
+
+  &__close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    background-image: url('./image/svg/close.svg');
+    background-size: contain;
+    background-position: center;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+//----- #card -----//
