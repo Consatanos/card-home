@@ -2,13 +2,14 @@
 .card {
   width: 100%;
   background-color: $color__bg;
-  border: 1px solid black;
+  border: 1px solid #000000;
   position: relative;
   display: flex;
   padding: 24px 24px;
 
   &__main {
     flex-grow: 1;
+    width: 100%;
     padding-right: 30px;
   }
 
