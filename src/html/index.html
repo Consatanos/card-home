@@ -9,43 +9,115 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- .card -->
-    <section class="card">
-      <div class="card__main">
 
-      </div>
-      <div class="card__aside">
-        <!-- .card-aside -->
-        <div class="card-aside">
-          <div class="card-aside__body">
-            <div class="card-aside__row">
-              <div class="card-aside__topic">Ваша цена по брони до <a href="#" class="card-aside__link">19 сентября</a>
-              </div>
-              <div class="card-aside__info">
-                <span class="card-aside__price">3 312 666 Р</span>
-              </div>
+  <div class="section">
+    <div class="wrapper">
+      <!-- .card -->
+      <section class="card">
+        <div class="card__main">
+          <!-- .card-main -->
+          <div class="card-main">
+            <div class="card-main__aside">
+              <a href="" class="card-main__img" alt="preview">
+                <span class="card-main__picture" style="background-image: url('./image/plan-1x.png');"></span>
+              </a>
             </div>
-            <div class="card-aside__row">
-              <div class="card-aside__topic">Текущая цена у засройщика</div>
-              <div class="card-aside__info">
-                <small>дороже на</small> <span class="card-aside__profit">324 825 Р</span>
+            <div class="card-main__main">
+              <div class="card-main__header">
+                <span class="card-main__title">2-к квартира</span>
+                <!-- .bage -->
+                <div class="bage bage_alert">
+                  <span class="bage__title">Просмотр квартиры</span>
+                  <span class="bage__rating">8.0</span>
+                </div>
+                <!-- #bage -->
+              </div>
+              <div class="card-main__body">
+                <!-- .card-params -->
+                <section class="card-params">
+                  <div class="card-params__item">
+                    <div class="card-params__title">Этаж</div>
+                    <div class="card-params__info">3 из 19</div>
+                  </div>
+                  <div class="card-params__item">
+                    <div class="card-params__title">Высота потолков</div>
+                    <div class="card-params__info">3,2 м</div>
+                  </div>
+                  <div class="card-params__item">
+                    <div class="card-params__title">Отделка</div>
+                    <div class="card-params__info">Предчистовая</div>
+                  </div>
+                  <div class="card-params__item">
+                    <div class="card-params__title">Общая площадь</div>
+                    <div class="card-params__info">32,24 м<sup>2</sup></div>
+                  </div>
+                  <div class="card-params__item">
+                    <div class="card-params__title">Жилая площадь</div>
+                    <div class="card-params__info">22,24 м<sup>2</sup></div>
+                  </div>
+                  <div class="card-params__item">
+                    <div class="card-params__title">Площадь кухни</div>
+                    <div class="card-params__info">14,24 м<sup>2</sup></div>
+                  </div>
+                </section>
+                <!-- #card-params -->
+              </div>
+              <div class="card-main__footer">
+                <!-- .buttons -->
+                <div class="btn__group">
+                  <button class="btn btn_success" role="button">
+                    <img src="./image/svg/check.svg" class="btn__icon" alt="check icon">
+                    <span class="btn__text">Вы были на просмотре</span>
+                  </button>
+                  <button class="btn btn_error" role="button">
+                    <img src="./image/svg/cross.svg" class="btn__icon" alt="cross icon">
+                    <span class="btn__text">Дом аккредитован другим банком</span>
+                  </button>
+                  <!-- #buttons -->
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-aside__footer">
-            <button class="btn btn_big" role="button">
-              <img src="./image/svg/key.svg" class="btn__icon" alt="key icon">
-              <span class="btn__text">Выбрать для покупки</span>
-            </button>
-          </div>
+          <!-- #card-main -->
         </div>
-        <!-- #card-aside -->
-      </div>
-      <button class="card__close" role="button"></button>
-    </section>
-    <!-- #card -->
+        <div class="card__aside">
+          <!-- .card-aside -->
+          <section class="card-aside">
+            <div class="card-aside__body">
+              <div class="card-aside__row">
+                <div class="card-aside__topic">Ваша цена по брони до <a href="#" class="card-aside__link">19
+                    сентября</a>
+                </div>
+                <div class="card-aside__info">
+                  <span class="card-aside__price">3 312 666 Р</span>
+                </div>
+              </div>
+              <div class="card-aside__row">
+                <div class="card-aside__topic">Текущая цена у засройщика</div>
+                <div class="card-aside__info">
+                  <small>дороже на</small> <span class="card-aside__profit">324 825 Р</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-aside__footer">
+              <!-- .buttons -->
+              <div class="btn__group">
+                <button class="btn btn_big" role="button">
+                  <img src="./image/svg/key.svg" class="btn__icon" alt="key icon">
+                  <span class="btn__text">Выбрать для покупки</span>
+                </button>
+              </div>
+              <!-- #buttons -->
+            </div>
+          </section>
+          <!-- #card-aside -->
+        </div>
+        <button class="card__close" role="button"></button>
+      </section>
+      <!-- #card -->
+    </div>
   </div>
+
 
   <script src="./main.js"></script>
 </body>
