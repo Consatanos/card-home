@@ -1,0 +1,47 @@
+//----- .card-aside -----//
+.card-aside {
+  display: flex;
+  flex-direction: column;
+
+  &__body {
+    margin-bottom: 10px;
+  }
+
+  &__footer {
+    margin-top: auto;
+
+  }
+
+  &__row {
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__topic {
+    color: fade-out(#000000, 0.6);
+    margin-bottom: 8px;
+  }
+
+  &__info {
+    color: fade-out(#000000, 0.6);
+  }
+
+  &__price {
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__profit {
+    color: $color__main;
+    font-weight: 700;
+  }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+//----- #card-aside -----//
